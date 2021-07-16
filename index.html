@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title> My Garage </title>
+</head>
+<body>
+
+    <div class="header">
+
+        <div class="titleBar">
+            <div class="titleLeft">
+                <div class="item"> My Garage</div>
+            </div>
+            <div class="titleRight-items">
+                <div class="item">Tesla</div>
+                <div class="item">Benz</div>
+                <div class="item">BMW</div>
+                <div class="item">Audi</div>
+            </div>
+            <div class="titleRight-icon">
+                <img onclick="show();" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAABLklEQVR4Xu2ZPQrCQBCFs9vaKOIdrO3tRCtvETyUgqewVC8gHsFehIAHiI43cAlZJrPMlzrMvLx585tQOX+C8++vIAAFOGeAFHAuAIogKUAKOGeAFHAugHQXmKzqewyyKJIokVNzPm7/YU+mAASgAFKAGuC6CM429VJExiV2AfnEZ3M53Hp1gRI/vAvmZBvsYqzEdyGgxKjlxIwCcrJZoi0UUGLUcmJOKmC63s1D9R3ldKplK7bx/bruH70GIdZh1mHWYdZh1+uw+yLovg1q9eyh/CQHoaGAafmFAC2mrfpBAVYjo4ULBWgxbdVPUgHuf4y4H4UhgIMIBxEOIq4PIlb7dy5cyTkglyOrdiDAamS0cKEALaat+kEBViOjhQsFaDFt1Q8KsBoZLVzuFfAD6I+yQW85k4cAAAAASUVORK5CYII=" alt="">
+            </div>
+
+        <div class="box">
+            <div class="itemBoard">Tesla</div>
+            <div class="itemBoard">Benz</div>
+            <div class="itemBoard">BMW</div>
+            <div class="itemBoard">Audi</div>
+            <div class="cross" onclick="hide();">X</div>
+        </div>
+        
+        </div>
+
+        <div class="pageName">
+            <div class="pageText" 
+                 onmouseover="over(this);"
+                 onmouseout="out(this);"
+            > 
+                Welcome Message 
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="container">
+
+        <div class="sectionTitle">
+            <div class="sectionText"> Tesla </div>
+        </div>
+
+        <div class="list">
+            <div class="car">
+                <p class="carName">Model S</p> 
+                <div class="carPic">
+                    <img src="pics/2020-Tesla-Model-S-1280x719.jpg" alt="">
+                </div>
+            </div>
+            <div class="car">
+                <p class="carName">Model 3</p> 
+                <div class="carPic">
+                    <img src="pics/model3blue.jpg" alt="">
+                </div>
+            </div>
+            <div class="car">
+                <p class="carName">Model X</p> 
+                <div class="carPic">
+                    <img src="pics/Tesla-Model-X-000-v-low-res-1500x850.jpg" alt="">
+                </div>
+            </div>
+            <div class="car">
+                <p class="carName">Model Y</p> 
+                <div class="carPic">
+                    <img src="pics/cabfddadf3bb147f2e355474b07fb11b.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="footer">
+        <div class="footText">Call to Action</div>
+    </div>
+
+    <script>
+        function over(elem){
+            elem.innerHTML ="Have a Good Time";
+        }
+        
+        function out(elem){
+            elem.innerHTML ="Welcome Message ";
+        }
+
+        function show() {
+            let elem=document.querySelector('.box');
+            elem.style.display="block";
+        }
+        
+        function hide() {
+            let elem=document.querySelector('.box');
+            elem.style.display="none";
+        }
+    </script>
+</body>
+</html>
